@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NX ENTERTAINMENT</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"/>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/main-style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    
+    
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/main-swiper.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        $(function(){
+            $("#header-wrap").load("header.html");
+            $("#footer-wrap").load("footer.html");
+        })
+    </script>
+    
+</head>
+<body>
+    <div id="header-wrap"></div>
+    <div id="main">
+        <section id="visual">
+            <div class="visual-bg"><img src="img/main-obj1.png" alt="visual-bg1"></div>
+            <div class="visual-bg"><img src="img/main-obj2.png" alt="visual-bg2"></div>
+            <div class="visual-bg"><img src="img/main-obj3.png" alt="visual-bg3"></div>
+            <div class="visual-wrap">
+                <h1>NX ENTERTAINMENT</h1>
+                <p>BEYOND THE PRESENT, TOWARDS THE <span>NEXT</span></p>
+                <div class="scroll-icon">
+                    <span>SCROLL</span>
+                    <img src="img/scroll.png" alt="scroll-icon">
+                </div>
+            </div>
+        </section>
+        <section id="intro">
+            <div class="intro-wrap">
+                <h1>NX 엔터테인먼트는<br>아티스트와 소비자를 연결하여<br>세계로 뻗어 나갑니다</h1>
+                <p><span>NX엔터테인먼트</span>는 다양한 분야의 최고 전문가들이 모여<br>아티스트를 보다 높은 곳으로 나가게 하는 엔터테인먼트입니다.<br><span>현재를 넘어, 다음을 향해</span><br>끊임없이 도전하고 나아가는 힘을 보여줍니다.</p>
+                <div class="view-more">
+                    <span>더 알아보기<i class="fas fa-location-arrow"></i></span>
+                </div>
+            </div>
+        </section>
+        <section id="artwork">
+            <div class="artwork-bg1"></div>
+            <div class="artwork-bg2"></div>
+            <div class="artwork-wrap">
+                <h1>ARTWORK</h1>
+                <!--swiper-->
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="play-icon"><i class="far fa-play-circle"></i></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="play-icon"><i class="far fa-play-circle"></i></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="play-icon"><i class="far fa-play-circle"></i></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="play-icon"><i class="far fa-play-circle"></i></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="play-icon"><i class="far fa-play-circle"></i></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="play-icon"><i class="far fa-play-circle"></i></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="play-icon"><i class="far fa-play-circle"></i></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="play-icon"><i class="far fa-play-circle"></i></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="play-icon"><i class="far fa-play-circle"></i></div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="play-icon"><i class="far fa-play-circle"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="artwork-modal">
+                <div class="modal-bg"></div>
+                <div class="modal-frame">
+                    <div class="modal-close"><i class="fas fa-times"></i></div>
+                    <iframe id="player" src="https://www.youtube.com/embed/c9RzZpV460k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+        <section id="news">
+            <div class="news-wrap">
+                <h1>NEWS</h1>
+                <div class="news-box">
+                   <div class="news-img"></div>
+                   <ul>
+                       <li class="selected-news"><a href="#">키이스트X와이낫미디어, '2021 드라마 극본 공모전' 개최</a><span class="news-date">2021-08-12</span></li>
+                       <li><a href="#">ENHYPEN, 일상 담은 브이로그 콘텐츠 예고! ‘EN-loG’(엔로그) 타임테이블 공개!</a><span class="news-date">2021-08-02</span></li>
+                       <li><a href="#">박지훈 컴백, 오늘 새 미니앨범 ‘My Collection’ 발표 [공식]</a><span class="news-date">2021-07-24</span></li>
+                       <li><a href="#">‘컴백 D-3’ 레드벨벳, 신곡 ‘Queendom’ MV 티저 13일 공개!</a><span class="news-date">2021-06-30</span></li>
+                       <li><a href="#">민서, 영화 ‘화평반점’ 캐스팅 확정…첫 스크린 데뷔</a><span class="news-date">2021-06-15</span></li>
+                   </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div id="footer-wrap"></div>
+</body>
+</html>

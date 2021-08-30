@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Artist - Actor</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"/>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/artist.css">
+    
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/modal.js"></script>
+    <script>
+        $(function(){
+            $("#header-wrap").load("header.html");
+            $("#footer-wrap").load("footer.html");
+        })
+    </script>
+    
+</head>
+<body>
+    <div id="header-wrap"></div>
+    <div id="main">
+        <div class="bg1"></div>
+        <div class="bg2"></div>
+        <h1>ACTOR</h1>
+        <ul class="musician-list">
+            <li>
+                <div class="prof-img actor">
+                    <img src="img/actor1.jpg" alt="actor img">
+                </div>
+                <span>김서형</span>
+            </li>
+            <li>
+                <div class="prof-img actor">
+                    <img src="img/actor2.jpg" alt="actor img">
+                </div>
+                <span>강한나</span>
+            </li>
+            <li>
+                <div class="prof-img actor">
+                    <img src="img/actor3.jpg" alt="actor img">
+                </div>
+                <span>채정안</span>
+            </li>
+            <li>
+                <div class="prof-img actor">
+                    <img src="img/actor4.jpg" alt="actor img">
+                </div>
+                <span>민서</span>
+            </li>
+        </ul>
+        
+        <!--모달-->
+        <div class="artist-modal">
+            <div class="modal-bg"></div>
+            <div class="modal-wrap">
+                <div class="modal-close"><i class="far fa-times-circle"></i></div>
+                <div class="modal-jacket">
+                    <img src="img/jacket1.jpg" alt="jacket img">
+                </div>
+                <h1>이름</h1>
+                <h2>데뷔</h2>
+                <span class="debut-date">2014.08.01</span>
+                <h2>수상 활동</h2>
+                <ul class="activity"></ul>
+                <h2>작품</h2>
+                <ul class="pic"></ul>
+            </div>
+            
+        </div>
+    </div>
+    <div id="footer-wrap"></div>
+</body>
+</html>

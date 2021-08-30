@@ -1,0 +1,109 @@
+<script>
+    //네비게이션 호버
+    $("nav div").mouseenter(function(e){
+            $(this).find(".sub-menu").show();
+            setTimeout(()=>{
+                $(this).find(".sub-menu").css("opacity",1);
+            },100);
+            
+            $(".sub-bg").show();
+            $(".sub-bg").css("left",$(this).offset().left-10).css("width",$(this).width()+20).css("height",$(this).find(".sub-menu").length * 120);
+        })
+    $("nav div").mouseleave(function(e){
+            $(this).find(".sub-menu").hide();
+            $(this).find(".sub-menu").css("opacity",0);
+            
+            $(".sub-bg").hide();
+        })
+    
+    let isOpen=false;
+    //모바일 네비게이션 등장
+    $(".mob-bar").click(function(){
+        if(isOpen){
+            //닫기
+            $(".mob-bar").removeClass("opened");
+            $(".mob-nav").hide();
+            isOpen = false;
+        }else{
+            //열기
+            $(".mob-bar").addClass("opened");
+            $(".mob-nav").css("display","flex");
+            isOpen = true;
+        }
+    })
+    
+    $(window).resize(function(){
+        if($(window).width()>1024){
+            $(".mob-bar").removeClass("opened");
+            $(".mob-nav").hide();
+            isOpen = false;
+        } 
+    })
+</script>
+
+<header>
+    <div class="logo-header"><a href="index.html"></a></div>
+    <nav>
+        <div class="sub-bg"></div>
+        <div>
+            <a href="intro-1.html">회사소개</a>
+            <ul class="sub-menu">
+                <li><a href="intro-1.html">NX ENTERTAINMENT</a></li>
+                <li><a href="intro-2.html">회사 연혁</a></li>
+            </ul>
+        </div>
+        <div><a href="musician.html">아티스트</a>
+            <ul class="sub-menu">
+                <li><a href="musician.html">가수</a></li>
+                <li><a href="actor.html">배우</a></li>
+            </ul>
+        </div>
+        <div><a href="news.html">뉴스/공지</a>
+            <ul class="sub-menu">
+                <li><a href="news.html">뉴스</a></li>
+                <li><a href="#">공지사항</a></li>
+            </ul>
+        </div>
+        <div><a href="#">오디션</a></div>
+    </nav>
+    <ul class="login">
+        <li><a href="#">로그인</a></li>
+        <li><a href="#">회원가입</a></li>
+    </ul>
+    
+    <div class="mob-bar">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    <div class="mob-nav">
+        <ul class="mob-login">
+            <li><a href="#">로그인</a></li>
+            <li><a href="#">회원가입</a></li>
+        </ul>
+        <ul class="mob-menu">
+            <li>
+                <a href="intro-1.html">회사소개</a>
+                <ul class="mob-sub">
+                    <li><a href="intro-1.html">NX ENTERTAINMENT</a></li>
+                    <li><a href="intro-2.html">회사 연혁</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="musician.html">아티스트</a>
+                <ul class="mob-sub">
+                    <li><a href="musician.html">가수</a></li>
+                    <li><a href="actor.html">배우</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="news.html">뉴스/공지</a>
+                <ul class="mob-sub">
+                    <li><a href="news.html">뉴스</a></li>
+                    <li><a href="#">공지사항</a></li>
+                </ul>
+            </li>
+            <li><a href="#">오디션</a></li>
+        </ul>
+    </div>
+</header>

@@ -1,0 +1,156 @@
+html{background-color: #000;}
+#main{
+    position: relative;
+    background-color: #414141;
+    padding: 0 20px;
+    overflow: hidden;
+}
+#main .bg1{
+    position: absolute;
+    left: -50px;top: 100px;
+    width: 400px;height: 400px;
+    background: url(../img/main-artwork-bg1.svg) no-repeat;
+    
+}
+#main .bg2{
+    position: absolute;
+    right: 100px;top: 40px;
+    width: 200px;height: 200px;
+    background: url(../img/main-artwork-bg2.svg) no-repeat;
+    
+}
+#main>h1{
+    position: relative;
+    margin-top: 100px;
+    padding: 0 5%;
+    font-size: 70px;color: #fff;
+}
+#main>h1:before{
+    content: '';
+    display: block;
+    position: absolute;bottom: 15px;
+    width: 400px;height: 15px;
+    background-color: rgba(255, 255, 255, 0.3)
+}
+#main .musician-list{
+    position: relative;
+    top: 0;
+    max-width: 1280px;
+    padding: 20px;margin: 50px auto;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 25px;
+}
+#main .musician-list:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+#main .musician-list li{
+    width: 50%;height: 500px;
+    float: left;
+    padding: 20px;
+    text-align: center;
+}
+#main .musician-list li .prof-img{
+    position: relative;
+    width: 300px;height: 300px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: .1s
+}
+#main .musician-list li .prof-img:after{
+    content: '클릭해서 프로필 보기';
+    position: absolute;
+    top: 45%;
+    display: block;
+    width: 100%;
+    text-align: center;color: #fff;
+}
+#main .musician-list li .prof-img img{
+    width: 100%;
+    transition: .1s;
+    filter: brightness(0.7);
+}
+#main .musician-list li .prof-img:hover img{
+    transform: scale(1.05);
+    filter: brightness(1);
+}
+#main .musician-list li .prof-img:hover:after{
+    display: none;
+}
+#main .musician-list li span{}
+
+#main .artist-modal{
+    width: 100%;height: 100%;
+    position: absolute;
+    top: 0;left: 0;
+    z-index: 1000;
+    display: none
+}
+#main .artist-modal .modal-bg{
+    position: fixed;
+    top: 0;left: 0;
+    width: 100%;height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+#main .artist-modal .modal-wrap{
+    position: relative;
+    top: 5%;margin: 0 auto;
+    max-width:1024px;height: 1250px;
+    background-color: #dedede;
+    box-shadow: 0 0 20px #333;
+}
+#main .artist-modal .modal-wrap .modal-close{
+    position: absolute;
+    right: 10px;
+    color: #fff;font-size: 40px;
+    z-index: 1;
+    cursor: pointer;
+}
+#main .artist-modal .modal-wrap .modal-jacket{
+    width: 100%;height: 300px;
+    overflow: hidden;
+}
+#main .artist-modal .modal-wrap .modal-jacket img{
+    transform: translateY(-25%);
+    width: 100%;
+}
+#main .artist-modal .modal-wrap h1{font-size: 40px;text-align: center;padding: 20px;}
+#main .artist-modal .modal-wrap h2{text-align: center;padding-top: 20px;}
+#main .artist-modal .modal-wrap h2:nth-child(4){
+    padding: 0;
+}
+#main .artist-modal .modal-wrap h2:nth-child(6){}
+#main .artist-modal .modal-wrap h2:nth-child(8){}
+#main .artist-modal .modal-wrap .debut-date{
+    display: block;text-align: center;color: #333
+}
+#main .artist-modal .modal-wrap .activity{text-align: center;color: #333}
+#main .artist-modal .modal-wrap .activity li{
+    margin: 10px 0;
+}
+#main .artist-modal .modal-wrap .pic{
+    padding: 0 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-between;
+}
+#main .artist-modal .modal-wrap .pic li{
+    width: 12%;
+    margin: 10px;
+    border-radius: 100px;
+    overflow: hidden;
+    box-shadow: 0 0 10px #555;
+}
+#main .artist-modal .modal-wrap .pic li img{
+    width: 100%;
+}
+
+@media all and (min-width:769px) and (max-width:1024px){}
+@media all and (max-width:768px){}
+
+
+
