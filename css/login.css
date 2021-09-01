@@ -1,0 +1,80 @@
+#main{
+}
+#main .login-wrap{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 20px;
+    padding: 100px 0;
+}
+#main .login-wrap h1{
+    text-align: center;
+    margin: 20px 0;
+}
+#main .login-wrap form{
+    width: 500px;height: 300px;
+    margin: 0 auto;
+    padding: 20px 0;
+    border: 1px solid #aaa;
+    border-radius: 20px;
+}
+#main .login-wrap form>div{
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 15px auto;
+    padding: 0 20px;
+}
+#main .login-wrap form label{
+    flex: 1;
+    margin: 0 20px;
+    color: #333;
+}
+#main .login-wrap form input{
+    flex: 3;
+    margin: 0 20px;
+    height: 35px;
+    outline: none;
+    text-indent: 5px
+}
+
+#main .login-wrap form .id-box{}
+#main .login-wrap form .id-box label{}
+#main .login-wrap form .id-box input{}
+
+#main .login-wrap form .password-box{margin-bottom: 0;}
+
+#main .login-wrap form .password-box label{}
+#main .login-wrap form .password-box input{}
+
+#main .login-wrap form .link{
+    padding: 0 40px;
+}
+#main .login-wrap form .link:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+#main .login-wrap form .link li{
+    width: 160px;text-align: right;
+    float: right;
+}
+#main .login-wrap form .link li a{
+    color: #777
+}
+#main .login-wrap form button{
+    display: block;
+    width: 200px;height: 45px;
+    margin: 0 auto;
+    margin-top: 0px;
+    background-color: #ff6bc0;
+    font-size: 18px; color: #fff;
+    border: none;
+}
+#main .login-wrap .alert{
+    display: block;
+    height: 25px;
+    text-align: center; color: #ff3e3e;
+    margin: 10px 0;
+}
+#main .login-wrap a{}

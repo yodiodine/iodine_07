@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>뉴스</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"/>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/login.css">
+    
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/login.js"></script>
+
+    <script>
+        $(function(){
+            $("#header-wrap").load("header.html");
+            $("#footer-wrap").load("footer.html");
+        })
+    </script>
+    
+</head>
+<body>
+    <div id="header-wrap"></div>
+    <div id="main">
+        <div class="login-wrap">
+            <h1>로그인</h1>
+            <form action="" method="POST">
+                <div class="id-box">
+                    <label for="id">아이디</label><input type="text" id="id" placeholder="아이디">
+                </div>
+                <div class="password-box">
+                    <label for="password">패스워드</label><input type="password" id="password" placeholder="비밀번호">
+                </div>
+                <ul class="link">
+                    <li><a href="#">아이디/비밀번호 찾기</a></li>
+                    <li><a href="#">회원가입</a></li>
+                </ul>
+                <span class="alert"></span>
+                <button type="button" onclick="checkValue();">로그인</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="footer-wrap"></div>
+</body>
+</html>
