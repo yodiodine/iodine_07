@@ -7,7 +7,7 @@ function checkValue(){
         alert.innerText = "아이디를 입력하세요.";
         return false;
     }else if(!password){
-        alert.innerText = "패스워드를 입력하세요.";
+        alert.innerText = "비밀번호를 입력하세요.";
         return false;
     }else{
         location.href = "../index.html"

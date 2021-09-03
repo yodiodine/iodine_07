@@ -128,8 +128,21 @@
 .modal .modal-wrap{
     position: absolute;
     top: 10%;left: 50%;transform: translate(-50%);
-    width: 80%;height: 80%;
+    width: 1024px;height: 80%;
     background-color: #fff;
     box-shadow: 0 0 10px #000;
     padding: 30px;
+}
+.modal .modal-wrap .modal-close{
+    cursor: pointer;
+    font-size: 20px;
+    float: right;
+}
+.modal .modal-wrap h1{
+    padding: 20px 0;
+}
+.modal .modal-wrap .modal-content{
+    padding: 20px 0;
+    height: 70%;
+    overflow-y: auto;
 }

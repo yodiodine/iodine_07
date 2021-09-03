@@ -53,7 +53,7 @@ html{background-color: #000;}
 }
 #main .musician-list li .prof-img{
     position: relative;
-    width: 300px;height: 300px;
+    width: 350px;height: 350px;
     margin: 0 auto;
     margin-bottom: 10px;
     cursor: pointer;
@@ -80,7 +80,6 @@ html{background-color: #000;}
 #main .musician-list li .prof-img:hover:after{
     display: none;
 }
-#main .musician-list li span{}
 
 #main .artist-modal{
     width: 100%;height: 100%;
@@ -98,7 +97,7 @@ html{background-color: #000;}
 #main .artist-modal .modal-wrap{
     position: relative;
     top: 5%;margin: 0 auto;
-    max-width:1024px;height: 1250px;
+    width:1000px;height: 1250px;
     background-color: #dedede;
     box-shadow: 0 0 20px #333;
 }
@@ -149,8 +148,61 @@ html{background-color: #000;}
     width: 100%;
 }
 
-@media all and (min-width:769px) and (max-width:1024px){}
-@media all and (max-width:768px){}
+@media all and (min-width:769px) and (max-width:1024px){
+    #main .musician-list li{
+        height: 400px;
+    }
+    #main .musician-list li .prof-img{
+        width: 300px;height: 300px;
+    }
+    
+    #main .artist-modal .modal-wrap{
+        max-width:800px;height: 1050px;
+    }
+    #main .artist-modal .modal-wrap .modal-jacket{
+        height: 250px;
+    }
+    #main .artist-modal .modal-wrap .modal-jacket img{
+        transform: translateY(-20%);
+    }
+    #main .artist-modal .modal-wrap h1{font-size: 35px;}
+    #main .artist-modal .modal-wrap .activity li{
+        margin: 5px 0;
+    }
+    #main .artist-modal .modal-wrap .pic{
+        padding: 0 30px;
+    }
+    #main .artist-modal .modal-wrap .pic li{
+        width: 12%;
+        margin: 7px;
+    }
+    #main .artist-modal .modal-wrap .pic li img{
+        width: 100%;
+    }
+    
+    
+}
+@media all and (max-width:768px){
+    #main>h1{
+        font-size: 45px;
+    }
+    #main>h1:before{
+        bottom: 10px;
+        width: 230px;height: 10px;
+    }
+    #main .musician-list{
+        max-width: 750px;
+    }
+    #main .musician-list li{
+        height: 300px;
+    }
+    #main .musician-list li .prof-img{
+        width: 100%;height: 100%;
+        margin: 0;
+    }
+    #main .musician-list li .prof-img span{
+    }
+}
 
 
 

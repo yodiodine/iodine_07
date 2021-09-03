@@ -2,43 +2,43 @@ $(function(){
     //뉴스 및 공지사항을 객체배열로
     const noticeArr = [
         {
-            "title":"title1",
-            "date" :"2021.01.01",
+            "title":"NX ENTERTAINMENT 홈페이지 개시",
+            "date" :"2020.03.20",
             "content" : "notice1.txt"
         },
         {
-            "title":"title2",
-            "date" :"2021.02.01",
+            "title":"NX 엔터테인먼트 1회 공채 오디션 소식",
+            "date" :"2020.09.20",
             "content" : "notice2.txt"
         },
         {
-            "title":"title3",
-            "date" :"2021.03.01",
+            "title":"안녕하세요 NX 엔터테인먼트입니다.",
+            "date" :"2020.12.12",
             "content" : "notice3.txt"
         },
         {
-            "title":"title4",
-            "date" :"2021.04.01",
+            "title":"이배우 팬미팅 관련 공지사항",
+            "date" :"2021.03.01",
             "content" : "notice4.txt"
         },
         {
-            "title":"title5",
-            "date" :"2021.05.01",
+            "title":"NX 엔터테인먼트 2회 공채 오디션 소식",
+            "date" :"2021.03.20",
             "content" : "notice5.txt"
         },
         {
-            "title":"title6",
-            "date" :"2021.06.01",
+            "title":"안녕하세요 NX 엔터테인먼트입니다.",
+            "date" :"2021.04.20",
             "content" : "notice6.txt"
         },
         {
-            "title":"title7",
-            "date" :"2021.01.01",
+            "title":"홈페이지 리뉴얼 안내",
+            "date" :"2021.05.16",
             "content" : "notice7.txt"
         },
         {
-            "title":"title8",
-            "date" :"2021.08.01",
+            "title":"안녕하세요 NX 엔터테인먼트입니다.",
+            "date" :"2021.06.20",
             "content" : "notice8.txt"
         }
     ];
@@ -61,7 +61,7 @@ $(function(){
     }
 
     //페이지를 클릭할 때 마다 게시판 변화 이벤트
-    $(".page li").click(function(){
+    $(".page li").on("click",function(){
         $(".page li").removeClass();
         $(this).addClass("selected-num")
 
@@ -78,7 +78,7 @@ $(function(){
     })
     
     //게시글 클릭 시 모달 띄우기 
-    $(".title").click(function(){
+    $(".board").on("click",".title",function(){
         $(".modal").show();
         modalShow($(this));
     })
@@ -86,7 +86,9 @@ $(function(){
         let modalNum = (num.siblings(".board-num").text());
         $.ajax({
             url:"../txt/"+noticeArr[modalNum-1].content,success: function(e){
-                $(".modal-wrap").html(e);
+                $(".modal-date").html(noticeArr[modalNum-1].date);
+                $(".modal-wrap h1").html(noticeArr[modalNum-1].title);
+                $(".modal-content").html(e);
             }
         })
     }
@@ -94,5 +96,7 @@ $(function(){
     $(".modal-bg").click(function(){
         $(".modal").hide();
     })
-
+    $(".modal-close").click(function(){
+        $(".modal").hide();
+    })
 })

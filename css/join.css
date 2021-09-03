@@ -1,0 +1,88 @@
+#main{}
+#main .join-wrap{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 100px 20px;
+}
+#main .join-wrap h1{
+    text-align: center;
+    margin: 30px 0;
+}
+#main .join-wrap form{
+    width: 500px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+#main .join-wrap form>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 20px 0;
+}
+#main .join-wrap form div label{
+    margin-bottom: 10px;
+}
+#main .join-wrap form div input{
+    height: 40px;
+    text-indent: 5px;
+    outline: none;
+}
+#main .join-wrap form .name-box{}
+#main .join-wrap form .name-box input{}
+
+#main .join-wrap form .birth-box{}
+#main .join-wrap form .birth-box input{}
+
+#main .join-wrap form .id-box{}
+#main .join-wrap form .id-box input{}
+
+#main .join-wrap form .password-box{}
+#main .join-wrap form .password-box input{}
+
+#main .join-wrap form .password-check-box{}
+#main .join-wrap form .password-check-box input{}
+
+#main .join-wrap form .personal-box{}
+#main .join-wrap form .personal-box div:nth-child(2){
+    background-color: #dedede;
+    border: 1px solid #aaa;
+    padding: 10px;
+    overflow-y: scroll;
+    height: 200px;
+    font-size: 14px;color: #333
+}
+#main .join-wrap form .personal-box div ul{
+    margin: 5px;
+    
+}
+#main .join-wrap form .personal-box div ul li{
+    list-style:square;
+    margin-left: 20px;
+}
+#main .join-wrap form .personal-box div:nth-child(3){
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    grid-gap: 10px;
+}
+#main .join-wrap form .personal-box label[for="agree"],
+#main .join-wrap form .personal-box label[for="disagree"]{
+    margin: 0;
+    margin-left: 10px;
+}
+#main .join-wrap form .personal-box input{}
+
+#main .join-wrap form .alert{
+    display: block;
+    height: 25px;
+    text-align: center; color: #ff3e3e;
+    margin: 10px 0;
+}
+#main .join-wrap form button{display: block;
+    width: 200px;height: 45px;
+    margin: 0 auto;
+    margin-top: 0px;
+    background-color: #ff6bc0;
+    font-size: 18px; color: #fff;
+    border: none;
+}

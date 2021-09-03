@@ -1,0 +1,133 @@
+#main{overflow-x: hidden}
+.audition-divide{
+    width: 100px;height: 10px;
+    background-color: #ff6bc0;
+    position: absolute;bottom: 0;left: 50%;transform: translate(-50%);
+}
+#main>div{
+    position: relative;
+    padding: 20px;
+}
+#main div>h1{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    color: #333;
+}
+
+#main .audition-top{
+    width: 100%;height: 400px;
+    background: url(../img/main-intro-bg2.svg) no-repeat center center;
+    background-size: 100%;
+}
+#main .audition-top h1{
+    position: relative;
+    top: 40%;
+    text-align: center;
+    font-size: 80px;
+    color: #333;
+}
+#main .audition-top span{
+    position: relative;top: 40%;
+    display: block;text-align: center;
+}
+
+#main .audition-spec{
+    height: 300px;
+    margin: 50px 0;
+}
+#main .audition-spec h1{margin-bottom: 40px;}
+#main .audition-spec span{
+    display: block;text-align: center;
+    padding-top: 30px
+}
+
+#main .audition-process{
+    height: 550px;
+    margin: 50px 0;
+}
+#main .audition-process h1{}
+#main .audition-process ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 1000px;margin: 80px auto;
+}
+#main .audition-process ul li{
+    width: 300px;height: 300px;
+    border: 1px solid #ff9bd5;
+    border-radius: 500px;
+    background-color: #fff;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;font-weight: bold;
+    text-align: center;
+    box-shadow: 0px 0px 4px #ff6bc0;
+}
+#main .audition-process ul li:nth-child(2){
+    background-color: #ff9bd5;
+    color: #fff
+}
+#main .audition-process ul li:after{
+    content: '';
+    display: block;
+    position: absolute;
+    right: -40px;
+    width: 40px;height: 2px;
+    background-color: #ff9bd5
+}
+#main .audition-process ul li:nth-child(3):after{
+    content: '';
+    display: none;
+}
+
+#main .audition-field{
+    height: 500px;
+    margin: 50px 0;
+}
+#main .audition-field h1{}
+#main .audition-field ul{
+    max-width: 1000px;height: 300px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+    border: 10px solid #f5f5f5;
+}
+#main .audition-field ul li{
+    width: 100%;height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+#main .audition-field ul li:nth-child(1){
+    background-color: #f5f5f5
+}
+#main .audition-field ul li:nth-child(1) i{
+    background-color: #fff;
+}
+#main .audition-field ul li h2{font-size: 30px;}
+#main .audition-field ul li i{
+    display: block;
+    width: 100px;height: 100px;
+    text-align: center;
+    font-size: 50px;line-height: 100px;
+    border-radius: 100px;
+    background-color: #eee
+}
+#main .audition-field ul li span{}
+
+#main .audition-how{height: 300px;}
+#main .audition-how h1{}
+#main .audition-how span{
+    display: block;
+    text-align: center;
+    margin: 20px 0;
+    font-size: 18px;
+}
+#main .audition-how span:nth-child(3){
+    text-decoration: underline;
+    color: #ff6bc0;
+}
