@@ -161,7 +161,7 @@ header .mob-nav .mob-menu li a:hover{
     color: #fff;
 }
 header .mob-nav .mob-menu li .mob-sub{
-    width: 30%;
+    width: 100%;
     margin: 0 auto;
     margin-bottom: 10px;
 }
@@ -169,7 +169,7 @@ header .mob-nav .mob-menu li .mob-sub li{padding: 5px 0}
 header .mob-nav .mob-menu li .mob-sub li a{font-size: 16px;color: #bbb}
 header .mob-nav .mob-menu li .mob-sub li a:hover{color: #fff}
 
-@media all and (max-width:1024px){
+@media all and (min-width:769px) and (max-width:1024px){
     header nav{
         display: none;
     }
@@ -180,3 +180,33 @@ header .mob-nav .mob-menu li .mob-sub li a:hover{color: #fff}
         display: flex;
     }
 }
+@media all and (max-width:768px){
+    header nav{
+        display: none;
+    }
+    header .login{
+        display: none;
+    }
+    header .mob-bar{
+        display: flex;
+    }
+    
+    header .mob-nav .mob-login{
+        width: 70%;
+        justify-content: space-between;
+    }
+    header .mob-nav .mob-login li{
+        width: 40%;
+    }
+    header .mob-nav .mob-login li a{
+        padding: 10px 5px;
+    }
+    header .mob-nav .mob-menu li a{
+        font-size: 22px;
+    }
+    header .mob-nav .mob-menu li .mob-sub li a{
+        font-size: 14px;
+    }
+}
+
+
