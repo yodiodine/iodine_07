@@ -1,4 +1,3 @@
-#main{}
 #main .join-wrap{
     max-width: 1280px;
     margin: 0 auto;
@@ -86,3 +85,41 @@
     font-size: 18px; color: #fff;
     border: none;
 }
+
+@media all and (max-width:768px){
+    #main .join-wrap{
+        padding-bottom: 50px
+    }
+    #main .join-wrap h1{
+        margin: 20px 0;
+    }
+    #main .join-wrap form{
+        max-width: 500px;
+        width: 85%;
+    }
+    #main .join-wrap form>div{
+        margin: 15px 0;
+    }
+    
+
+    #main .join-wrap form .personal-box div:nth-child(2){
+        height: 300px;
+        font-size: 13px;
+    }
+    #main .join-wrap form .personal-box div ul{
+        margin: 2px;
+    }
+    
+    #main .join-wrap form .personal-box div:nth-child(3){
+        grid-gap: 5px;
+    }
+    
+    #main .join-wrap form .alert{
+        height: 70px;
+    }
+    #main .join-wrap form button{display: block;
+        max-width: 200px;
+        width: 80%;
+    }
+}
+
