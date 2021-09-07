@@ -97,9 +97,10 @@ html{background-color: #000;}
 #main .artist-modal .modal-wrap{
     position: relative;
     top: 5%;margin: 0 auto;
-    width:1000px;height: 1250px;
+    width: 1000px;
     background-color: #dedede;
     box-shadow: 0 0 20px #333;
+    padding-bottom: 20px;
 }
 #main .artist-modal .modal-wrap .modal-close{
     position: absolute;
@@ -157,7 +158,7 @@ html{background-color: #000;}
     }
     
     #main .artist-modal .modal-wrap{
-        max-width:800px;height: 1050px;
+        width:700px;
     }
     #main .artist-modal .modal-wrap .modal-jacket{
         height: 250px;
@@ -173,7 +174,6 @@ html{background-color: #000;}
         padding: 0 30px;
     }
     #main .artist-modal .modal-wrap .pic li{
-        width: 12%;
         margin: 7px;
     }
     #main .artist-modal .modal-wrap .pic li img{
@@ -182,7 +182,7 @@ html{background-color: #000;}
     
     
 }
-@media all and (max-width:768px){
+@media all and (min-width:650px) and (max-width:768px){
     #main>h1{
         font-size: 45px;
     }
@@ -194,15 +194,106 @@ html{background-color: #000;}
         max-width: 750px;
     }
     #main .musician-list li{
-        height: 300px;
+        height:320px;
+    }
+    #main .musician-list li .prof-img{
+        width: 250px;height: 250px;
+    }
+    
+    #main .artist-modal .modal-wrap{
+        margin: 0 auto;
+        width: 600px;
+    }
+    #main .artist-modal .modal-wrap .modal-jacket{
+        height: 200px;
+    }
+    #main .artist-modal .modal-wrap .modal-close{
+        font-size: 35px;
+    }
+    #main .artist-modal .modal-wrap h1{
+        font-size: 30px;
+        padding: 10px;
+    }
+    #main .artist-modal .modal-wrap h2{
+        font-size: 20px;
+        padding-top: 10px;
+    }
+    #main .artist-modal .modal-wrap .debut-date{
+        font-size: 14px;
+    }
+    #main .artist-modal .modal-wrap .activity{
+        font-size: 14px;
+        line-height: 1.2;
+    }
+    #main .artist-modal .modal-wrap .activity li{
+        margin: 10px 0;
+    }
+    #main .artist-modal .modal-wrap .pic{
+        padding: 0 30px;
+    }
+    #main .artist-modal .modal-wrap .pic li{
+        width: 10.5%;
+        margin: 10px;
+    }
+}
+@media all and (max-width:650px){
+    #main>h1{
+        font-size: 40px;
+        text-align: center;
+    }
+    #main>h1:before{
+        bottom: 7px;
+        width: 210px;height: 8px;
+        left: 50%;transform: translate(-50%);
+    }
+    #main .musician-list{
+        display: flex;
+        flex-direction: column;
+    }
+    #main .musician-list li{
+        width: 100%;height: 100vw;
+        display: flex;
+        flex-direction: column;
     }
     #main .musician-list li .prof-img{
         width: 100%;height: 100%;
-        margin: 0;
+        display: flex;
+        justify-content: center;align-items: center;
+        margin-bottom: 0;
     }
-    #main .musician-list li .prof-img span{
+    
+    #main .artist-modal .modal-wrap{
+        width: 90%;
+        top: 4%;
+    }
+    #main .artist-modal .modal-wrap .modal-jacket{
+        height:100px;
+    }
+    #main .artist-modal .modal-wrap .modal-close{
+        font-size: 30px;
+    }
+    #main .artist-modal .modal-wrap h1{
+        font-size: 30px;
+        padding: 10px;
+    }
+    #main .artist-modal .modal-wrap h2{
+        font-size: 20px;
+        padding-top: 10px;
+    }
+    #main .artist-modal .modal-wrap .debut-date{
+        font-size: 14px;
+    }
+    #main .artist-modal .modal-wrap .activity{
+        font-size: 14px;
+        line-height: 1;
+        padding: 0 5px
+    }
+    #main .artist-modal .modal-wrap .pic{
+        padding: 0 10px;
+    }
+    #main .artist-modal .modal-wrap .pic li{
+        width: 20%;
+        margin: 5px;
     }
 }
-
-
 
