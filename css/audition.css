@@ -46,7 +46,6 @@
     height: 550px;
     margin: 50px 0;
 }
-#main .audition-process h1{}
 #main .audition-process ul{
     display: flex;
     justify-content: space-around;
@@ -87,7 +86,6 @@
     height: 500px;
     margin: 50px 0;
 }
-#main .audition-field h1{}
 #main .audition-field ul{
     max-width: 1000px;height: 300px;
     margin: 50px auto;
@@ -117,10 +115,8 @@
     border-radius: 100px;
     background-color: #eee
 }
-#main .audition-field ul li span{}
 
 #main .audition-how{height: 300px;}
-#main .audition-how h1{}
 #main .audition-how span{
     display: block;
     text-align: center;
@@ -130,4 +126,81 @@
 #main .audition-how span:nth-child(3){
     text-decoration: underline;
     color: #ff6bc0;
+}
+
+
+@media all and (min-width:769px) and (max-width:1024px){
+    
+    #main .audition-process ul li{
+        width: 230px;height: 230px;
+        font-size: 28px;
+    }
+    #main .audition-process ul li:after{
+        right: -100px;
+        width: 100px;height: 2px;
+        background-color: #ff9bd5
+    }
+}
+@media all and (max-width:768px){
+    .audition-divide{
+        width: 80px;
+    }
+    #main>div{
+        position: relative;
+        padding: 20px;
+    }
+    #main div>h1{
+        font-size: 28px;
+    }
+
+    #main .audition-top{
+        height: 300px;
+    }
+    #main .audition-top h1{
+        font-size: 50px;
+    }
+    #main .audition-spec{
+        height: 220px;
+        margin: 0;
+    }
+    #main .audition-spec h1{margin-bottom: 0px;}
+
+    #main .audition-process{
+        height: 700px;
+        margin: 0;
+    }
+    #main .audition-process ul{
+        margin: 40px auto;
+        height: 550px;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    #main .audition-process ul li{
+        width: 170px;height: 170px;
+        font-size: 20px;
+    }
+    #main .audition-process ul li:after{
+        bottom: -31px;left: 50%;transform: translate(-50%);
+        width: 2px;height: 30px;
+    }
+
+    #main .audition-field{
+        height: 700px;
+        margin: 0;
+    }
+    #main .audition-field ul{
+        height: 500px;
+        flex-direction: column;
+    }
+    #main .audition-field ul li h2{font-size: 25px;}
+    #main .audition-field ul li i{
+        width: 90px;height: 90px;
+        font-size: 35px;line-height: 90px;
+    }
+
+    #main .audition-how{height: 250px;}
+    #main .audition-how span{
+        font-size: 16px;
+    }
+    
 }

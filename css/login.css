@@ -1,5 +1,3 @@
-#main{
-}
 #main .login-wrap{
     max-width: 1280px;
     margin: 0 auto;
@@ -37,26 +35,16 @@
     text-indent: 5px
 }
 
-#main .login-wrap form .id-box{}
-#main .login-wrap form .id-box label{}
-#main .login-wrap form .id-box input{}
-
 #main .login-wrap form .password-box{margin-bottom: 0;}
 
-#main .login-wrap form .password-box label{}
-#main .login-wrap form .password-box input{}
-
 #main .login-wrap form .link{
+    display: flex;
+    justify-content: flex-end;
     padding: 0 40px;
 }
-#main .login-wrap form .link:after{
-    content: '';
-    display: block;
-    clear: both;
-}
 #main .login-wrap form .link li{
-    width: 160px;text-align: right;
-    float: right;
+    margin-left: 20px;
+    text-align: right;
 }
 #main .login-wrap form .link li a{
     color: #777
@@ -76,3 +64,51 @@
     text-align: center; color: #ff3e3e;
     margin: 10px 0;
 }
+
+@media all and (max-width:768px){
+    #main .login-wrap h1{
+        margin: 20px 0;
+    }
+    #main .login-wrap form{
+        width: 85%;height: 420px;
+    }
+    #main .login-wrap form>div{
+        width:90%; height: 100px;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0
+    }
+    #main .login-wrap form label{
+        flex: 1;
+        margin: 15px 0;
+        display: flex;align-items: center;
+    }
+    #main .login-wrap form input{
+        flex: 1;
+        margin: 0;
+        width: 100%;
+    }
+
+    #main .login-wrap form .password-box{margin-bottom: 10px;}
+
+    #main .login-wrap form .link{
+        width: 90%;margin: 0 auto;
+        padding: 0;
+        justify-content: flex-start;
+        font-size: 14px;
+        flex-wrap: wrap;
+    }
+    #main .login-wrap form .link li{
+        margin-left: 0;
+        margin-right: 20px;
+        text-align: left;
+    }
+    #main .login-wrap form button{
+        max-width: 200px;
+        width: 80%;
+    }
+    #main .login-wrap .alert{
+        font-size: 14px;
+    }
+}
+

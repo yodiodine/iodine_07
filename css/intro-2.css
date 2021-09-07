@@ -49,6 +49,8 @@
     position: absolute;top: 0;
     width: 350px;
     color: #555;
+    opacity: 0;
+    transition: 1.3s
 }
 #main .history-wrap .history-body .activity:nth-of-type(odd){
     left: 100px;
