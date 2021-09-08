@@ -260,9 +260,7 @@ html{background-color: #000;}
         display: flex;
         justify-content: center;align-items: center;
         margin-bottom: 0;
-<<<<<<< HEAD
     }
-    
     #main .artist-modal .modal-wrap{
         width: 90%;
         top: 4%;
@@ -270,9 +268,6 @@ html{background-color: #000;}
     #main .artist-modal .modal-wrap .modal-jacket{
         height:100px;
     }
-=======
-    }
-    
     #main .artist-modal .modal-wrap{
         width: 90%;
         top: 4%;
@@ -280,7 +275,6 @@ html{background-color: #000;}
     #main .artist-modal .modal-wrap .modal-jacket{
         height:100px;
     }
->>>>>>> ecd61de70b1a07b98790aeb959a7fca8fc043dd9
     #main .artist-modal .modal-wrap .modal-close{
         font-size: 30px;
     }
@@ -309,9 +303,3 @@ html{background-color: #000;}
     }
 }
 
-<<<<<<< HEAD
-
-
-
-=======
->>>>>>> ecd61de70b1a07b98790aeb959a7fca8fc043dd9
