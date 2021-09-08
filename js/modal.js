@@ -103,8 +103,4 @@ $(function(){
             $(".pic li").eq(i).find("img").attr("src","img/pic/"+artistArr[artistIdx].album[i]+".jpg");
         }
     })
-    
-    
-    
-    
 })

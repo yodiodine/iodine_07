@@ -126,7 +126,7 @@ $(function(){
     function modalShow(num){
         let modalNum = (num.siblings(".board-num").text());
         $.ajax({
-            url:"../txt/"+newsArr[modalNum-1].content,
+            url:"txt/"+newsArr[modalNum-1].content,
             success: function(e){
                 $(".modal-date").html(newsArr[modalNum-1].date);
                 $(".modal-wrap h1").html(newsArr[modalNum-1].title);

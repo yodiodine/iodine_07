@@ -85,7 +85,7 @@ $(function(){
     function modalShow(num){
         let modalNum = (num.siblings(".board-num").text());
         $.ajax({
-            url:"../txt/"+noticeArr[modalNum-1].content,success: function(e){
+            url:"txt/"+noticeArr[modalNum-1].content,success: function(e){
                 $(".modal-date").html(noticeArr[modalNum-1].date);
                 $(".modal-wrap h1").html(noticeArr[modalNum-1].title);
                 $(".modal-content").html(e);
